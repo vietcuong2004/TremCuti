@@ -63,3 +63,9 @@ cardValentine.addEventListener("click", () => {
         }, 1000)
     }
 })
+
+window.addEventListener("load", () => {
+    let audio = new Audio("./AThousandYears.mp3"); // Đường dẫn file mp3
+    audio.loop = true; // Lặp vô hạn
+    audio.play().catch(error => console.log("Trình duyệt chặn autoplay: ", error));
+});
